@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    username: root
+    password: wuyuanjian0
+    url: jdbc:mysql:///itaem?characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false
+    suffix: .html
+    encoding: UTF-8
+    prefix: classpath:/templates/
+
+  web:
+    resources:
+      static-locations: /templates/,classpath:/static
+
+server:
+  port: 8080
+#redis:
+#  host: localhost
+#  port: 6379
+#  timeout: 10
+#  pool-max-total: 1000
+#  pool-max-idle: 500
+#  pool-max-wait: 500
+#
